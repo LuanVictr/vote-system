@@ -11,7 +11,7 @@ public class PessoaCandidata extends Pessoa {
    * @param numero recebe o numero do candidato
    */
   public PessoaCandidata(String nome, int numero) {
-    super(nome);
+    setNome(nome);
     this.numero = numero;
     this.votos = 0;
   }
@@ -34,5 +34,15 @@ public class PessoaCandidata extends Pessoa {
 
   public void receberVoto() {
     this.votos += 1;
+  }
+
+  @Override
+  public String getNome() {
+    return super.getNome();
+  }
+
+  @Override
+  public void setNome(String novoNome) {
+    super.setNome(novoNome);
   }
 }
